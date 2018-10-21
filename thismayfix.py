@@ -100,7 +100,7 @@ def sendMessage(text):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     try:
-        socketaddress = ('35.238.254.108', 1336)
+        socketaddress = ('10.131.222.198', 1336)
         data = createJSON(text)
         sock.connect(socketaddress)
         sock.sendall(data.encode())
